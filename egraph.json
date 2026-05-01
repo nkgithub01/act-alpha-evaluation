@@ -1,0 +1,1544 @@
+{
+  "nodes": {
+    "0.0": {
+      "op": "Var['%q']",
+      "children": [],
+      "eclass": "0",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "126.0": {
+      "op": "softmax[rows='64']",
+      "children": [
+        "101.0"
+      ],
+      "eclass": "126",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "126.1": {
+      "op": "bitcvt",
+      "children": [
+        "130.0"
+      ],
+      "eclass": "126",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "126.2": {
+      "op": "copy",
+      "children": [
+        "126.0"
+      ],
+      "eclass": "126",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "132.0": {
+      "op": "bitcvt",
+      "children": [
+        "124.0"
+      ],
+      "eclass": "132",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "132.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "150.0"
+      ],
+      "eclass": "132",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "25.0": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "10.0"
+      ],
+      "eclass": "25",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "69.0": {
+      "op": "reshape[shape='128']",
+      "children": [
+        "47.0"
+      ],
+      "eclass": "69",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "6.0": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "5.0"
+      ],
+      "eclass": "6",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "6.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "22.0"
+      ],
+      "eclass": "6",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "170.0": {
+      "op": "mov[rows='64']",
+      "children": [
+        "161.0"
+      ],
+      "eclass": "170",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "170.1": {
+      "op": "bitcvt",
+      "children": [
+        "174.0"
+      ],
+      "eclass": "170",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "170.2": {
+      "op": "copy",
+      "children": [
+        "170.0"
+      ],
+      "eclass": "170",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "31.0": {
+      "op": "bitcvt",
+      "children": [
+        "3.0"
+      ],
+      "eclass": "31",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "31.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "71.0"
+      ],
+      "eclass": "31",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "75.0": {
+      "op": "alpha_hbm",
+      "children": [
+        "159.0"
+      ],
+      "eclass": "75",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "75.1": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "43.0"
+      ],
+      "eclass": "75",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "12.0": {
+      "op": "alpha_d1",
+      "children": [
+        "67.0"
+      ],
+      "eclass": "12",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "12.1": {
+      "op": "bitcvt",
+      "children": [
+        "37.0"
+      ],
+      "eclass": "12",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "12.2": {
+      "op": "copy",
+      "children": [
+        "12.0"
+      ],
+      "eclass": "12",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "12.3": {
+      "op": "transpose[perm='1,0']",
+      "children": [
+        "7.0"
+      ],
+      "eclass": "12",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "163.0": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "154.0"
+      ],
+      "eclass": "163",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "37.0": {
+      "op": "bitcvt",
+      "children": [
+        "12.0"
+      ],
+      "eclass": "37",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "37.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "73.0"
+      ],
+      "eclass": "37",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "81.0": {
+      "op": "alpha_hbm",
+      "children": [
+        "146.0"
+      ],
+      "eclass": "81",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "81.1": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "45.0"
+      ],
+      "eclass": "81",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "18.0": {
+      "op": "alpha_d1",
+      "children": [
+        "148.0"
+      ],
+      "eclass": "18",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "18.1": {
+      "op": "alpha_d2",
+      "children": [
+        "126.0"
+      ],
+      "eclass": "18",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "18.2": {
+      "op": "bitcvt",
+      "children": [
+        "43.0"
+      ],
+      "eclass": "18",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "18.3": {
+      "op": "copy",
+      "children": [
+        "18.0"
+      ],
+      "eclass": "18",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "18.4": {
+      "op": "divide",
+      "children": [
+        "14.0",
+        "17.0"
+      ],
+      "eclass": "18",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "150.0": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "132.0"
+      ],
+      "eclass": "150",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "43.0": {
+      "op": "bitcvt",
+      "children": [
+        "18.0"
+      ],
+      "eclass": "43",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "43.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "75.0"
+      ],
+      "eclass": "43",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "87.0": {
+      "op": "alpha_hbm",
+      "children": [
+        "118.0"
+      ],
+      "eclass": "87",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "87.1": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "41.0"
+      ],
+      "eclass": "87",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "5.0": {
+      "op": "alpha_hbm",
+      "children": [
+        "4.0"
+      ],
+      "eclass": "5",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "93.0": {
+      "op": "bitcvt",
+      "children": [
+        "67.0"
+      ],
+      "eclass": "93",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "93.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "105.0"
+      ],
+      "eclass": "93",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "118.0": {
+      "op": "store_rm[rows='64']",
+      "children": [
+        "65.0"
+      ],
+      "eclass": "118",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "11.0": {
+      "op": "alpha_d1",
+      "children": [
+        "61.0"
+      ],
+      "eclass": "11",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "11.1": {
+      "op": "bitcvt",
+      "children": [
+        "10.0"
+      ],
+      "eclass": "11",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "11.2": {
+      "op": "bitcvt",
+      "children": [
+        "29.0"
+      ],
+      "eclass": "11",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "11.3": {
+      "op": "copy",
+      "children": [
+        "11.0"
+      ],
+      "eclass": "11",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "124.0": {
+      "op": "load_rm[rows='64']",
+      "children": [
+        "146.0"
+      ],
+      "eclass": "124",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "124.1": {
+      "op": "mov[rows='64']",
+      "children": [
+        "101.0"
+      ],
+      "eclass": "124",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "124.2": {
+      "op": "bitcvt",
+      "children": [
+        "132.0"
+      ],
+      "eclass": "124",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "124.3": {
+      "op": "copy",
+      "children": [
+        "124.0"
+      ],
+      "eclass": "124",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "17.0": {
+      "op": "bitcvt",
+      "children": [
+        "35.0"
+      ],
+      "eclass": "17",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "17.1": {
+      "op": "broadcast[dims='64,64']",
+      "children": [
+        "16.0"
+      ],
+      "eclass": "17",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "17.2": {
+      "op": "copy",
+      "children": [
+        "17.0"
+      ],
+      "eclass": "17",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "61.0": {
+      "op": "load_rm[rows='64']",
+      "children": [
+        "8.0"
+      ],
+      "eclass": "61",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "61.1": {
+      "op": "load_rm[rows='64']",
+      "children": [
+        "114.0"
+      ],
+      "eclass": "61",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "61.2": {
+      "op": "bitcvt",
+      "children": [
+        "91.0"
+      ],
+      "eclass": "61",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "61.3": {
+      "op": "copy",
+      "children": [
+        "61.0"
+      ],
+      "eclass": "61",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "105.0": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "93.0"
+      ],
+      "eclass": "105",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "130.0": {
+      "op": "bitcvt",
+      "children": [
+        "126.0"
+      ],
+      "eclass": "130",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "130.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "152.0"
+      ],
+      "eclass": "130",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "174.0": {
+      "op": "bitcvt",
+      "children": [
+        "170.0"
+      ],
+      "eclass": "174",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "67.0": {
+      "op": "load_rm[rows='64']",
+      "children": [
+        "116.0"
+      ],
+      "eclass": "67",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "67.1": {
+      "op": "load_cm[rows='64']",
+      "children": [
+        "4.0"
+      ],
+      "eclass": "67",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "67.2": {
+      "op": "load_cm[rows='64']",
+      "children": [
+        "118.0"
+      ],
+      "eclass": "67",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "67.3": {
+      "op": "bitcvt",
+      "children": [
+        "93.0"
+      ],
+      "eclass": "67",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "67.4": {
+      "op": "copy",
+      "children": [
+        "67.0"
+      ],
+      "eclass": "67",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "4.0": {
+      "op": "Var['%k']",
+      "children": [],
+      "eclass": "4",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "111.0": {
+      "op": "bitcvt",
+      "children": [
+        "101.0"
+      ],
+      "eclass": "111",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "111.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "128.0"
+      ],
+      "eclass": "111",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "29.0": {
+      "op": "bitcvt",
+      "children": [
+        "11.0"
+      ],
+      "eclass": "29",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "29.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "83.0"
+      ],
+      "eclass": "29",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "73.0": {
+      "op": "alpha_hbm",
+      "children": [
+        "116.0"
+      ],
+      "eclass": "73",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "73.1": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "37.0"
+      ],
+      "eclass": "73",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "10.0": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "9.0"
+      ],
+      "eclass": "10",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "10.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "25.0"
+      ],
+      "eclass": "10",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "161.0": {
+      "op": "gemm",
+      "children": [
+        "148.0",
+        "61.0"
+      ],
+      "eclass": "161",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "161.1": {
+      "op": "bitcvt",
+      "children": [
+        "165.0"
+      ],
+      "eclass": "161",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "161.2": {
+      "op": "copy",
+      "children": [
+        "161.0"
+      ],
+      "eclass": "161",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "35.0": {
+      "op": "bitcvt",
+      "children": [
+        "17.0"
+      ],
+      "eclass": "35",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "35.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "85.0"
+      ],
+      "eclass": "35",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "79.0": {
+      "op": "reshape[shape='2']",
+      "children": [
+        "39.0"
+      ],
+      "eclass": "79",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "16.0": {
+      "op": "bitcvt",
+      "children": [
+        "47.0"
+      ],
+      "eclass": "16",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "16.1": {
+      "op": "copy",
+      "children": [
+        "16.0"
+      ],
+      "eclass": "16",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "16.2": {
+      "op": "reduce[dims='1']",
+      "children": [
+        "14.0"
+      ],
+      "eclass": "16",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "148.0": {
+      "op": "load_rm[rows='64']",
+      "children": [
+        "159.0"
+      ],
+      "eclass": "148",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "148.1": {
+      "op": "mov[rows='64']",
+      "children": [
+        "126.0"
+      ],
+      "eclass": "148",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "148.2": {
+      "op": "bitcvt",
+      "children": [
+        "154.0"
+      ],
+      "eclass": "148",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "148.3": {
+      "op": "copy",
+      "children": [
+        "148.0"
+      ],
+      "eclass": "148",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "41.0": {
+      "op": "bitcvt",
+      "children": [
+        "7.0"
+      ],
+      "eclass": "41",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "41.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "87.0"
+      ],
+      "eclass": "41",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "85.0": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "35.0"
+      ],
+      "eclass": "85",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "22.0": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "6.0"
+      ],
+      "eclass": "22",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "3.0": {
+      "op": "alpha_d1",
+      "children": [
+        "63.0"
+      ],
+      "eclass": "3",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "3.1": {
+      "op": "bitcvt",
+      "children": [
+        "2.0"
+      ],
+      "eclass": "3",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "3.2": {
+      "op": "bitcvt",
+      "children": [
+        "31.0"
+      ],
+      "eclass": "3",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "3.3": {
+      "op": "copy",
+      "children": [
+        "3.0"
+      ],
+      "eclass": "3",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "47.0": {
+      "op": "bitcvt",
+      "children": [
+        "16.0"
+      ],
+      "eclass": "47",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "47.1": {
+      "op": "reshape[shape='64,2']",
+      "children": [
+        "69.0"
+      ],
+      "eclass": "47",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "91.0": {
+      "op": "bitcvt",
+      "children": [
+        "61.0"
+      ],
+      "eclass": "91",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "91.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "103.0"
+      ],
+      "eclass": "91",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "154.0": {
+      "op": "bitcvt",
+      "children": [
+        "148.0"
+      ],
+      "eclass": "154",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "154.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "163.0"
+      ],
+      "eclass": "154",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "9.0": {
+      "op": "alpha_hbm",
+      "children": [
+        "8.0"
+      ],
+      "eclass": "9",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "116.0": {
+      "op": "store_rm[rows='64']",
+      "children": [
+        "67.0"
+      ],
+      "eclass": "116",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "116.1": {
+      "op": "store_cm[rows='64']",
+      "children": [
+        "65.0"
+      ],
+      "eclass": "116",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "15.0": {
+      "op": "bitcvt",
+      "children": [
+        "39.0"
+      ],
+      "eclass": "15",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "15.1": {
+      "op": "constant[value='0']",
+      "children": [],
+      "eclass": "15",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "15.2": {
+      "op": "copy",
+      "children": [
+        "15.0"
+      ],
+      "eclass": "15",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "103.0": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "91.0"
+      ],
+      "eclass": "103",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "21.0": {
+      "op": "alpha_hbm",
+      "children": [
+        "177.0"
+      ],
+      "eclass": "21",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "21.1": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "20.0"
+      ],
+      "eclass": "21",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "65.0": {
+      "op": "load_rm[rows='64']",
+      "children": [
+        "4.0"
+      ],
+      "eclass": "65",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "65.1": {
+      "op": "load_rm[rows='64']",
+      "children": [
+        "118.0"
+      ],
+      "eclass": "65",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "65.2": {
+      "op": "bitcvt",
+      "children": [
+        "89.0"
+      ],
+      "eclass": "65",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "65.3": {
+      "op": "copy",
+      "children": [
+        "65.0"
+      ],
+      "eclass": "65",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "109.0": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "95.0"
+      ],
+      "eclass": "109",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "2.0": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "1.0"
+      ],
+      "eclass": "2",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "2.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "27.0"
+      ],
+      "eclass": "2",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "128.0": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "111.0"
+      ],
+      "eclass": "128",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "172.0": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "165.0"
+      ],
+      "eclass": "172",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "27.0": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "2.0"
+      ],
+      "eclass": "27",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "71.0": {
+      "op": "alpha_hbm",
+      "children": [
+        "120.0"
+      ],
+      "eclass": "71",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "71.1": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "31.0"
+      ],
+      "eclass": "71",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "8.0": {
+      "op": "Var['%v']",
+      "children": [],
+      "eclass": "8",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "159.0": {
+      "op": "store_rm[rows='64']",
+      "children": [
+        "148.0"
+      ],
+      "eclass": "159",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "33.0": {
+      "op": "bitcvt",
+      "children": [
+        "14.0"
+      ],
+      "eclass": "33",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "33.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "77.0"
+      ],
+      "eclass": "33",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "77.0": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "33.0"
+      ],
+      "eclass": "77",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "14.0": {
+      "op": "bitcvt",
+      "children": [
+        "33.0"
+      ],
+      "eclass": "14",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "14.1": {
+      "op": "copy",
+      "children": [
+        "14.0"
+      ],
+      "eclass": "14",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "14.2": {
+      "op": "exponential",
+      "children": [
+        "13.0"
+      ],
+      "eclass": "14",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "165.0": {
+      "op": "bitcvt",
+      "children": [
+        "161.0"
+      ],
+      "eclass": "165",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "165.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "172.0"
+      ],
+      "eclass": "165",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "39.0": {
+      "op": "bitcvt",
+      "children": [
+        "15.0"
+      ],
+      "eclass": "39",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "39.1": {
+      "op": "reshape[shape='1,2']",
+      "children": [
+        "79.0"
+      ],
+      "eclass": "39",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "83.0": {
+      "op": "alpha_hbm",
+      "children": [
+        "114.0"
+      ],
+      "eclass": "83",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "83.1": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "29.0"
+      ],
+      "eclass": "83",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "146.0": {
+      "op": "store_rm[rows='64']",
+      "children": [
+        "124.0"
+      ],
+      "eclass": "146",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "20.0": {
+      "op": "bitcvt",
+      "children": [
+        "19.0"
+      ],
+      "eclass": "20",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "20.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "21.0"
+      ],
+      "eclass": "20",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "1.0": {
+      "op": "alpha_hbm",
+      "children": [
+        "0.0"
+      ],
+      "eclass": "1",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "45.0": {
+      "op": "bitcvt",
+      "children": [
+        "13.0"
+      ],
+      "eclass": "45",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "45.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "81.0"
+      ],
+      "eclass": "45",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "89.0": {
+      "op": "bitcvt",
+      "children": [
+        "65.0"
+      ],
+      "eclass": "89",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "89.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "107.0"
+      ],
+      "eclass": "89",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "152.0": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "130.0"
+      ],
+      "eclass": "152",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "177.0": {
+      "op": "store_rm[rows='64']",
+      "children": [
+        "170.0"
+      ],
+      "eclass": "177",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "7.0": {
+      "op": "alpha_d1",
+      "children": [
+        "65.0"
+      ],
+      "eclass": "7",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "7.1": {
+      "op": "bitcvt",
+      "children": [
+        "6.0"
+      ],
+      "eclass": "7",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "7.2": {
+      "op": "bitcvt",
+      "children": [
+        "41.0"
+      ],
+      "eclass": "7",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "7.3": {
+      "op": "copy",
+      "children": [
+        "7.0"
+      ],
+      "eclass": "7",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "114.0": {
+      "op": "store_rm[rows='64']",
+      "children": [
+        "61.0"
+      ],
+      "eclass": "114",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "95.0": {
+      "op": "bitcvt",
+      "children": [
+        "63.0"
+      ],
+      "eclass": "95",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "95.1": {
+      "op": "reshape[shape='64,64,2']",
+      "children": [
+        "109.0"
+      ],
+      "eclass": "95",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "13.0": {
+      "op": "alpha_d1",
+      "children": [
+        "124.0"
+      ],
+      "eclass": "13",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "13.1": {
+      "op": "alpha_d2",
+      "children": [
+        "101.0"
+      ],
+      "eclass": "13",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "13.2": {
+      "op": "bitcvt",
+      "children": [
+        "45.0"
+      ],
+      "eclass": "13",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "13.3": {
+      "op": "copy",
+      "children": [
+        "13.0"
+      ],
+      "eclass": "13",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "13.4": {
+      "op": "dot",
+      "children": [
+        "3.0",
+        "12.0"
+      ],
+      "eclass": "13",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "120.0": {
+      "op": "store_rm[rows='64']",
+      "children": [
+        "63.0"
+      ],
+      "eclass": "120",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "101.0": {
+      "op": "gemm",
+      "children": [
+        "63.0",
+        "67.0"
+      ],
+      "eclass": "101",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "101.1": {
+      "op": "bitcvt",
+      "children": [
+        "111.0"
+      ],
+      "eclass": "101",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "101.2": {
+      "op": "copy",
+      "children": [
+        "101.0"
+      ],
+      "eclass": "101",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "19.0": {
+      "op": "alpha_d1",
+      "children": [
+        "170.0"
+      ],
+      "eclass": "19",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "19.1": {
+      "op": "alpha_d2",
+      "children": [
+        "161.0"
+      ],
+      "eclass": "19",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "19.2": {
+      "op": "bitcvt",
+      "children": [
+        "20.0"
+      ],
+      "eclass": "19",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "19.3": {
+      "op": "copy",
+      "children": [
+        "19.0"
+      ],
+      "eclass": "19",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "19.4": {
+      "op": "dot",
+      "children": [
+        "18.0",
+        "11.0"
+      ],
+      "eclass": "19",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "63.0": {
+      "op": "load_rm[rows='64']",
+      "children": [
+        "0.0"
+      ],
+      "eclass": "63",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "63.1": {
+      "op": "load_rm[rows='64']",
+      "children": [
+        "120.0"
+      ],
+      "eclass": "63",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "63.2": {
+      "op": "bitcvt",
+      "children": [
+        "95.0"
+      ],
+      "eclass": "63",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "63.3": {
+      "op": "copy",
+      "children": [
+        "63.0"
+      ],
+      "eclass": "63",
+      "cost": 1.0,
+      "subsumed": false
+    },
+    "107.0": {
+      "op": "reshape[shape='8192']",
+      "children": [
+        "89.0"
+      ],
+      "eclass": "107",
+      "cost": 1.0,
+      "subsumed": false
+    }
+  },
+  "root_eclasses": [
+    "177"
+  ],
+  "class_data": {}
+}

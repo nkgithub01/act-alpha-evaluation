@@ -4,3 +4,9 @@
 [submodule "act-improved"]
 	path = act-improved
 	url = git@github.com:Saatvik-Lochan/act.git
+[submodule "SmoothE"]
+	path = SmoothE
+	url = git@github.com:cornell-zhang/SmoothE.git
+[submodule "smoothe"]
+	path = smoothe
+	url = git@github.com:cornell-zhang/SmoothE.git

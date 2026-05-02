@@ -177,11 +177,21 @@ fn parse_selected_node_id(
     (eclass, node_idx)
 }
 
+fn get_instruction_cost(node: &TensorOp) -> f64 {
+    match node {
+        TensorOp::Load01(..) => 10.0,
+        TensorOp::Load03(..) => 10.0,
+        TensorOp::Store10(..) => 10.0,
+        TensorOp::Store30(..) => 10.0,
+        TensorOp::Mov21(..) | TensorOp::Mov23(..) => 5.0,
+        TensorOp::Gemm33(..) | TensorOp::Gemm13(..) => 100.0,
+        TensorOp::Softmax(..) => 50.0,
+        _ => 1.0,
+    }
+}
+
 // Copied from https://github.com/egraphs-good/egraph-serialize
-pub fn egg_to_serialized_egraph<L, A>(egraph: &EGraph<L, A>) -> egraph_serialize::EGraph
-where
-    L: Language + Display,
-    A: Analysis<L>,
+pub fn egg_to_serialized_egraph(egraph: &EGraph<TensorOp, TensorInfo>) -> egraph_serialize::EGraph
 {
     use egraph_serialize::*;
     let mut out = EGraph::default();
@@ -197,7 +207,7 @@ where
                         .map(|id| NodeId::from(format!("{}.0", egraph.find(*id))))
                         .collect(),
                     eclass: ClassId::from(format!("{}", class.id)),
-                    cost: Cost::new(1.0).unwrap(),
+                    cost: Cost::new(get_instruction_cost(node)).unwrap(),
                     subsumed: false,
                 },
             )

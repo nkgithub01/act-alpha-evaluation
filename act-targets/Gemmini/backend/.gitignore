@@ -3,8 +3,3 @@
 target/
 build/
 __pycache__/
-
-act-backends/
-asm
-*.json
-taidl-specs

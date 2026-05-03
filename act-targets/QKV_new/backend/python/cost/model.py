@@ -1,15 +1,15 @@
 def cost(path: str):
     # Define constant costs for each instruction
     instruction_costs = {
-        'load_01': 10,
-        'load_03': 10,
-        'store_10': 10,
-        'store_30': 10,
+        'load_01': 20,
+        'load_03': 40,
+        'store_10': 20,
+        'store_30': 40,
         'transpose_13': 10,
         'mov_21': 5,
         'mov_23': 5,
         'gemm_33': 100,
-        'gemm_13': 100,
+        'gemm_13': 80,
         'softmax': 50
     }
     

@@ -179,12 +179,15 @@ fn parse_selected_node_id(
 
 fn get_instruction_cost(node: &TensorOp) -> f64 {
     match node {
-        TensorOp::Load01(..) => 10.0,
-        TensorOp::Load03(..) => 10.0,
-        TensorOp::Store10(..) => 10.0,
-        TensorOp::Store30(..) => 10.0,
-        TensorOp::Mov21(..) | TensorOp::Mov23(..) => 5.0,
-        TensorOp::Gemm33(..) | TensorOp::Gemm13(..) => 100.0,
+        TensorOp::Load01(..) => 20.0,
+        TensorOp::Load03(..) => 40.0,
+        TensorOp::Store10(..) => 20.0,
+        TensorOp::Store30(..) => 40.0,
+        TensorOp::Transpose13(..) => 10.0,
+        TensorOp::Mov21(..) => 5.0,
+        TensorOp::Mov23(..) => 5.0,
+        TensorOp::Gemm33(..) => 100.0,
+        TensorOp::Gemm13(..) => 80.0,
         TensorOp::Softmax(..) => 50.0,
         _ => 1.0,
     }

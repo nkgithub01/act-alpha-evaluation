@@ -14,7 +14,7 @@ build_backend.sh QKV
 ## Finally, run the backend to compile a kernel
 
 ```bash
-compile_hlo.sh QKV
+compile_hlo.sh QKV attention.hlo
 ```
 
 'QKV' may be replaced with any backend name.

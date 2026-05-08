@@ -16,3 +16,4 @@ targets/*
 asm
 *.json
 taidl-specs
+.pytest_cache

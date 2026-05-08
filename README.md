@@ -38,7 +38,7 @@ git clone --recursive https://github.com/nkgithub01/act-alpha-evaluation
 ./tests/pytest.sh QKV improved
 ```
 
-### 6. Generate, Build, and Test Alpha QKV Backend
+### 6. Generate, Build, and Test QKV_new Alpha Backend
 
 ```bash
 ./scripts/generate.sh QKV_new.py
@@ -72,11 +72,3 @@ Contains pytest-based validation scripts used to verify correctness of generated
 ### `backends/`
 
 Stores generated backend implementations and compiled backend artifacts.
-
-### `evaluation/`
-
-Holds benchmarking outputs, compiled HLO artifacts, and evaluation results generated during experiments.
-
-### `models/`
-
-Contains model definitions, attention kernels, and related HLO inputs used during compilation and evaluation.
